@@ -3,3 +3,4 @@
 ^README.*$
 ^docs$
 ^LICENSE\.md$
+^README\.Rmd$
