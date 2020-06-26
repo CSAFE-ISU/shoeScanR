@@ -8,7 +8,7 @@ Authors@R:
            email = "first.last@example.com",
            comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: What the package does (one paragraph).
-Depends:
+Imports:
   Rvcg (>= 0.18),
   Arothron (>= 1.1.1),
   rgl (>= 0.100.54),

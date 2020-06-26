@@ -45,7 +45,7 @@ library(shoeScanR)
 
 The following examples are using sony shoes (and absolute file paths, which is a big NO), that's going to be too complicated for the final README:
 
-```{r}
+```{r, cache=TRUE}
 # read scans
 sony1 <- read_stl("/Users/heike/Documents/Data/shoe3d/data-raw/My_Scans/Asic06_03_19.stl")
 sony2 <- read_stl("/Users/heike/Documents/Data/shoe3d/data-raw/My_Scans/SonyL_20190702.stl")
@@ -53,4 +53,11 @@ sony2 <- read_stl("/Users/heike/Documents/Data/shoe3d/data-raw/My_Scans/SonyL_20
 # center the scans
 sony1 <- center3d(sony1)
 sony2 <- center3d(sony2)
+```
+
+Visualize the scans
+```{r}
+rgl::plot3d(sony2, aspect="iso", col="blue", add=TRUE)
+rgl::plot3d(sony1, aspect="iso", col="green", add=TRUE)
+axes3d()
 ```
